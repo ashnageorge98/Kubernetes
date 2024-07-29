@@ -1,0 +1,14 @@
+replicaCount: 3
+image:
+  repository: my-repo/ecommerce-app
+  tag: latest
+service:
+  type: LoadBalancer
+  port: 80
+ingress:
+  enabled: true
+  hosts:
+    - host: ecommerce.dev.example.com
+      paths:
+        - /
+
