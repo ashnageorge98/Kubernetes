@@ -1,0 +1,7 @@
+ETCDCTL_API=3 etcdctl snapshot restore snapshot.db \
+  --data-dir=/var/lib/etcd \
+  --name <name> \
+  --initial-advertise-peer-urls <peer-urls> \
+  --initial-cluster <cluster> \
+  --initial-cluster-token <token>
+
